@@ -1,0 +1,28 @@
+{
+    "name": "grch/apiv1",
+    "description": "",
+    "authors": [
+        {
+            "name": "MaksDe",
+            "email": "demyanenkomaks0@gmail.ru"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\ApiV1\\": "app/",
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\ApiV1\\Tests\\": "tests/"
+        }
+    }
+}
