@@ -21,6 +21,7 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Saade\FilamentLaravelLog\FilamentLaravelLogPlugin;
 use TomatoPHP\FilamentUsers\FilamentUsersPlugin;
 
 class AdminPanelProvider extends PanelProvider
@@ -63,6 +64,11 @@ class AdminPanelProvider extends PanelProvider
                 ModulesPlugin::make(),
                 FilamentUsersPlugin::make(),
                 FilamentShieldPlugin::make(),
+                FilamentLaravelLogPlugin::make()
+                    ->navigationGroup('Управление')
+                    ->navigationLabel('Журналы ошибок')
+                    ->authorize(fn () => auth()->user()->can('page_ViewLog'))
+                    ->navigationSort(997),
             ])
             ->maxContentWidth(Width::Full)
             ->topNavigation();

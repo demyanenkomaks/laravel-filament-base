@@ -11,7 +11,7 @@
 ## Журналы
 
 * [ ] [rmsramos/activitylog](https://github.com/rmsramos/activitylog) - Журнал активности
-* [ ] [saade/filament-laravel-log](https://github.com/saade/filament-laravel-log) - Журнал ошибок
+* [x] [saade/filament-laravel-log](https://github.com/saade/filament-laravel-log) - Журнал ошибок
 * [ ] [rickdbcn/filament-email](https://github.com/rickdbcn/filament-email) - Журнал исходящих E-mail
 
 ## Разное
@@ -26,10 +26,10 @@
 * [x] [laravel/pint](https://laravel.com/docs/pint) - Фиксатор стиля кода
 * [x] [larastan/larastan](https://github.com/larastan/larastan) - Статический анализ кода
 * [x] [roave/security-advisories](https://github.com/Roave/SecurityAdvisories) - Проверка пакетов по известным уязвимостям безопасности
-* [ ] [pestphp/pest](https://pestphp.com/docs/installation) - Тестирование кода
+* [x] [pestphp/pest](https://pestphp.com) - Тестирование кода
 
 ## Помощники
 
-* [ ] [maksde/helpers](https://github.com/demyanenkomaks/helpers) - Шаблоны для Resource Filament
+* [x] [maksde/helpers](https://github.com/demyanenkomaks/helpers) - Шаблоны для Resource Filament
 * [x] [maksde/support](https://github.com/demyanenkomaks/support) - Помощник для Laravel
 

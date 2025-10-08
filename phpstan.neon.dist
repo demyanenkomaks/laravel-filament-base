@@ -11,10 +11,25 @@ parameters:
         - config/
         - lang/
         - database/
-        # - Modules/
+        - Modules/
         - public/
         - resources/
         - routes/
         - tests/
 
     ignoreErrors:
+       -
+            message: '#Call to an undefined method Pest\\PendingCalls\\TestCall\:\:expect\(\).#'
+            identifier: method.notFound
+            paths:
+                - tests\Architecture\*
+       -
+            message: '#Call to an undefined method Pest\\PendingCalls\\TestCall\:\:preset\(\).#'
+            identifier: method.notFound
+            paths:
+                - tests\Architecture\*
+       -
+            message: '#Access to an undefined property Pest\\Arch\\Contracts\\ArchExpectation\:\:\$classes.#'
+            identifier: property.notFound
+            paths:
+                - tests\Architecture\*
