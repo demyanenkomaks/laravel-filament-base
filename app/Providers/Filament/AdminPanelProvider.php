@@ -64,12 +64,11 @@ class AdminPanelProvider extends PanelProvider
                 FilamentUsersPlugin::make(),
                 FilamentShieldPlugin::make(),
                 EnvironmentIndicatorPlugin::make()
-                    ->color(fn (): ?array => match (app()->environment()) {
-                        'production' => null,
-                        'local' => Color::Green,
+                    ->color(fn (): array => match (app()->environment()) {
+                        'production' => Color::Red,
                         'staging' => Color::Orange,
-                        'preprod' => Color::Blue,
-                        default => Color::Rose,
+                        'development' => Color::Blue,
+                        default => Color::Green,
                     }),
             ])
             ->topNavigation();
