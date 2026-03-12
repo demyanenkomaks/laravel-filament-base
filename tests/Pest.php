@@ -1,5 +1,8 @@
 <?php
 
+use Nwidart\Modules\Facades\Module;
+use Tests\TestCase;
+
 /*
 |--------------------------------------------------------------------------
 | Test Case
@@ -11,7 +14,7 @@
 |
 */
 
-pest()->extend(Tests\TestCase::class)
+pest()->extend(TestCase::class)
     // ->use(Illuminate\Foundation\Testing\RefreshDatabase::class)
     ->in(
         'Architecture',
@@ -52,7 +55,7 @@ pest()->extend(Tests\TestCase::class)
  */
 function getModules(): array
 {
-    return \Nwidart\Modules\Facades\Module::all();
+    return Module::all();
 }
 
 /**

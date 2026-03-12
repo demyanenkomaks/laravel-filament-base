@@ -1,5 +1,14 @@
 <?php
 
+use App\Models\User;
+use Spatie\Permission\Models\Role;
+use TomatoPHP\FilamentUsers\Filament\Resources\Users\Schemas\UserForm;
+use TomatoPHP\FilamentUsers\Filament\Resources\Users\Schemas\UserInfolist;
+use TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UserActions;
+use TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UserBulkActions;
+use TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UserFilters;
+use TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UsersTable;
+
 return [
     /**
      * ---------------------------------------------
@@ -113,7 +122,7 @@ return [
      * ---------------------------------------------
      * if you when to custom the user model path
      */
-    'model' => \App\Models\User::class,
+    'model' => User::class,
 
     /**
      * ---------------------------------------------
@@ -129,7 +138,7 @@ return [
      * ---------------------------------------------
      * if you when to custom the role model path
      */
-    'roles_model' => \Spatie\Permission\Models\Role::class,
+    'roles_model' => Role::class,
 
     /**
      * ---------------------------------------------
@@ -139,16 +148,16 @@ return [
      */
     'resource' => [
         'table' => [
-            'class' => \TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UsersTable::class,
-            'filters' => \TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UserFilters::class,
-            'actions' => \TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UserActions::class,
-            'bulkActions' => \TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UserBulkActions::class,
+            'class' => UsersTable::class,
+            'filters' => UserFilters::class,
+            'actions' => UserActions::class,
+            'bulkActions' => UserBulkActions::class,
         ],
         'form' => [
-            'class' => \TomatoPHP\FilamentUsers\Filament\Resources\Users\Schemas\UserForm::class,
+            'class' => UserForm::class,
         ],
         'infolist' => [
-            'class' => \TomatoPHP\FilamentUsers\Filament\Resources\Users\Schemas\UserInfolist::class,
+            'class' => UserInfolist::class,
         ],
     ],
 

@@ -12,7 +12,7 @@
 - **PHP**: 8.4+
 - **MySql**: 8+ или **PgSql**: 16+
 - **Laravel**: 12
-- **FilamentPhp**: 4
+- **FilamentPhp**: 5
 
 ## 🚀 Разворачивание проекта
 

@@ -1,7 +1,7 @@
 # 📋 Список предустановленных пакетов
 
 * [x] [Laravel 12](https://laravel.com/docs/12.x)
-* [x] [Filament 4](https://filamentphp.com/docs/4.x/introduction/installation)
+* [x] [Filament 5](https://filamentphp.com/docs/5.x/introduction/installation)
 
 ## Пользователи
 
@@ -11,7 +11,7 @@
 ## Журналы
 
 * [ ] [rmsramos/activitylog](https://github.com/rmsramos/activitylog) - Журнал активности
-* [x] [saade/filament-laravel-log](https://github.com/saade/filament-laravel-log) - Журнал ошибок
+* [ ] [saade/filament-laravel-log](https://github.com/saade/filament-laravel-log) - Журнал ошибок
 * [ ] [rickdbcn/filament-email](https://github.com/rickdbcn/filament-email) - Журнал исходящих E-mail
 
 ## Разное
