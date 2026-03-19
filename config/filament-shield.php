@@ -1,7 +1,7 @@
 <?php
 
+use App\Filament\Resources\Roles\RoleResource;
 use App\Models\User;
-use BezhanSalleh\FilamentShield\Resources\Roles\RoleResource;
 use Filament\Pages\Dashboard;
 use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
@@ -70,7 +70,7 @@ return [
 
     'super_admin' => [
         'enabled' => true,
-        'name' => 'super_admin',
+        'name' => env('SUPER_ADMIN_GROUP', 'super_admin'),
         'define_via_gate' => false,
         'intercept_gate' => 'before',
     ],
@@ -152,7 +152,7 @@ return [
 
     'localization' => [
         'enabled' => false,
-        'key' => 'filament-shield::filament-shield',
+        'key' => 'filament-shield::filament-shield.resource_permission_prefixes_labels',
     ],
 
     /*

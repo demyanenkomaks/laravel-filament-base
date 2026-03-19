@@ -26,7 +26,7 @@ class AppServiceProvider extends ServiceProvider
 
         // Дает пользователю с ролью super_admin доступ ко всей админ панели
         Gate::before(static function ($user, $ability) {
-            if ($user->hasRole('super_admin')) {
+            if ($user->hasRole(config('filament-shield.super_admin.name'))) {
                 return true;
             }
         });

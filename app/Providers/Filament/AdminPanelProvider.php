@@ -62,7 +62,8 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->plugins([
                 ModulesPlugin::make(),
-                FilamentUsersPlugin::make(),
+                FilamentUsersPlugin::make()
+                    ->useUserResource(false),
                 FilamentShieldPlugin::make(),
                 EnvironmentIndicatorPlugin::make()
                     ->color(fn (): array => match (app()->environment()) {

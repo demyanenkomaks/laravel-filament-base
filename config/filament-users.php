@@ -2,12 +2,6 @@
 
 use App\Models\User;
 use Spatie\Permission\Models\Role;
-use TomatoPHP\FilamentUsers\Filament\Resources\Users\Schemas\UserForm;
-use TomatoPHP\FilamentUsers\Filament\Resources\Users\Schemas\UserInfolist;
-use TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UserActions;
-use TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UserBulkActions;
-use TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UserFilters;
-use TomatoPHP\FilamentUsers\Filament\Resources\Users\Tables\UsersTable;
 
 return [
     /**
@@ -148,16 +142,16 @@ return [
      */
     'resource' => [
         'table' => [
-            'class' => UsersTable::class,
-            'filters' => UserFilters::class,
-            'actions' => UserActions::class,
-            'bulkActions' => UserBulkActions::class,
+            'class' => null,
+            'filters' => null,
+            'actions' => null,
+            'bulkActions' => null,
         ],
         'form' => [
-            'class' => UserForm::class,
+            'class' => null,
         ],
         'infolist' => [
-            'class' => UserInfolist::class,
+            'class' => null,
         ],
     ],
 
