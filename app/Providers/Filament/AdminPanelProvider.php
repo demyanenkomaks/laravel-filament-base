@@ -29,6 +29,7 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
+            ->favicon(secure_asset('favicon.ico'))
             ->id(config('filament.admin_path'))
             ->path(config('filament.admin_path'))
             ->login()
