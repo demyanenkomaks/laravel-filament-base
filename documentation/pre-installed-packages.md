@@ -8,17 +8,10 @@
 * [x] [tomatophp/filament-users](https://github.com/tomatophp/filament-users) - Управление пользователями
 * [x] [bezhansalleh/filament-shield](https://github.com/bezhansalleh/filament-shield) - Управление доступами по ролям
 
-## Журналы
-
-* [ ] [rmsramos/activitylog](https://github.com/rmsramos/activitylog) - Журнал активности
-* [ ] [saade/filament-laravel-log](https://github.com/saade/filament-laravel-log) - Журнал ошибок
-* [ ] [rickdbcn/filament-email](https://github.com/rickdbcn/filament-email) - Журнал исходящих E-mail
-
 ## Разное
 
-* [ ] [maksde/filament-email-templates](https://github.com/demyanenkomaks/filament-email-templates) - Шаблоны E-mail
 * [x] [coolsam/modules](https://github.com/savannabits/filament-modules) - Модули ([документация](https://laravelmodules.com/docs/12/getting-started/introduction)) ([artisan команды](https://laravelmodules.com/docs/12/advanced/artisan-commands))
-    * [x] Api модуль с приветствием и настройка CORS
+    * [x] Api модуль с приветствием
 
 ## Проверка кода
 
