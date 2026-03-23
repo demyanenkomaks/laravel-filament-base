@@ -19,12 +19,13 @@ description: This is a new rule
 
   Dependencies
   - Composer for dependency management
-  - PHP 8.4
-  - Laravel 12
-  - Filament 5
+  - PHP 8.4+
+  - Laravel 12+
+  - Filament 5+
 
   PHP and Laravel Standards
   - Leverage PHP 8.4+ features when appropriate (e.g., typed properties, match expressions).
+  - Always use strict typing: declare(strict_types=1);
   - Adhere to PSR-12 coding standards for consistent code style.
   - Utilize Laravel's built-in features and helpers to maximize efficiency.
   - Follow Laravel's directory structure and file naming conventions.
@@ -51,7 +52,7 @@ description: This is a new rule
   - Utilize Laravel's validation features, including Form Requests, for data integrity
   - Implement database indexing and use Laravel's query optimization features for better performance
   - Use Laravel Telescope for debugging and performance monitoring in development
-  - Leverage Filament 4 for rapid admin panel development
+  - Leverage Filament 5 for rapid admin panel development
   - Implement proper security measures, including CSRF protection, XSS prevention, and input sanitization
 
   Code Architecture

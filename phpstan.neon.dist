@@ -17,6 +17,9 @@ parameters:
         - routes/
         - tests/
 
+    reportUnmatchedIgnoredErrors: true
+    treatPhpDocTypesAsCertain: false
+
     ignoreErrors:
        -
             message: '#Call to an undefined method Pest\\PendingCalls\\TestCall\:\:expect\(\).#'

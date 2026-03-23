@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Nwidart\Modules\Facades\Module;
 use Tests\TestCase;
 

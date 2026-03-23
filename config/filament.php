@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
 
     'admin_path' => env('ADMIN_PATH', 'filament'),
