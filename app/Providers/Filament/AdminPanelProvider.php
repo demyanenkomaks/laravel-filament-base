@@ -22,6 +22,8 @@ use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Maksde\FilamentVersions\FilamentVersionsPlugin;
+use Maksde\FilamentVersions\Widgets\FilamentVersionsWidget;
 use pxlrbt\FilamentEnvironmentIndicator\EnvironmentIndicatorPlugin;
 use TomatoPHP\FilamentUsers\FilamentUsersPlugin;
 
@@ -47,6 +49,7 @@ class AdminPanelProvider extends PanelProvider
             ->widgets([
                 AccountWidget::class,
                 FilamentInfoWidget::class,
+                FilamentVersionsWidget::class,
             ])
             ->middleware([
                 EncryptCookies::class,
@@ -74,6 +77,7 @@ class AdminPanelProvider extends PanelProvider
                         'development' => Color::Blue,
                         default => Color::Green,
                     }),
+                FilamentVersionsPlugin::make(),
             ])
             ->topNavigation();
     }
