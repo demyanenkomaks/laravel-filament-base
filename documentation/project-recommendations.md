@@ -487,6 +487,7 @@ public function down(): void
 | `$model` | обязательно | `protected $model = Model::class` | Связь фабрики с моделью |
 | `definition()` | обязательно | поля из `$fillable` | Генерация через `fake()` |
 | Связи | FK | `RelatedModel::factory()` | Вместо raw id |
+| Файлы | поля с путями на диск `public` | `App\Support\DefaultStoragePath` | Константы и методы `images()`, `videos()`, `all()` — не хардкодить строки и не генерировать бинарные данные |
 | Общие атрибуты | сложная сущность | `showcaseAttributes(array $overrides = [])` | Статический метод для переиспользования в сидере и тестах |
 
 ---
@@ -525,6 +526,15 @@ class TagFactory extends Factory
 
 States (`->state(...)`) — по необходимости, не обязательный шаблон.
 
+**Файлы-заглушки** лежат в `storage/app/public/default/` (в git). Пути для фабрик и сидеров — через `App\Support\DefaultStoragePath` (относительно диска `public`):
+
+```php
+use App\Support\DefaultStoragePath;
+
+'photo' => fake()->randomElement(DefaultStoragePath::images()),
+'video' => DefaultStoragePath::LARAVEL_MP4,
+```
+
 ---
 
 #### Builder контента (фабрика)
@@ -544,7 +554,7 @@ States (`->state(...)`) — по необходимости, не обязате
 | Ключи `data` | Те же имена, что поля в `schema` формы; значения — валидные для JSON |
 | Вложенность | Родительский блок: массив вложенных `{ type, data }` в `data.<ключ>` — тот же ключ, что у вложенного `Builder::make('<ключ>')` в форме |
 | Верхний уровень | Новый блок — добавить в `builderContent()` или в агрегатор |
-| Файлы | Строковые пути-заглушки, не бинарные данные |
+| Файлы | `DefaultStoragePath` | Константы и `images()` / `videos()` / `all()` — не хардкодить пути и не класть бинарные данные в фабрику |
 
 **Пример** — те же ключи, что в [форме](#builder-контента-форма):
 

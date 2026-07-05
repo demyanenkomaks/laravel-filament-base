@@ -3,8 +3,6 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\Route;
+use Modules\ApiV1\Http\Controllers\ApiV1Controller;
 
-Route::get('', fn (): array => [
-    'message' => 'API check works!',
-    'version' => '1.0.0',
-]);
+Route::get('', [ApiV1Controller::class, 'index'])->name('index');

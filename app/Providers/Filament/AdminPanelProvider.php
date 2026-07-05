@@ -18,12 +18,13 @@ use Filament\Widgets\AccountWidget;
 use Filament\Widgets\FilamentInfoWidget;
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
-use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken;
+use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Maksde\FilamentVersions\FilamentVersionsPlugin;
 use Maksde\FilamentVersions\Widgets\FilamentVersionsWidget;
+use Maksde\Helpers\Filament\NavigationSidebar\NavigationSidebarPlugin;
 use pxlrbt\FilamentEnvironmentIndicator\EnvironmentIndicatorPlugin;
 use TomatoPHP\FilamentUsers\FilamentUsersPlugin;
 
@@ -57,7 +58,7 @@ class AdminPanelProvider extends PanelProvider
                 StartSession::class,
                 AuthenticateSession::class,
                 ShareErrorsFromSession::class,
-                VerifyCsrfToken::class,
+                PreventRequestForgery::class,
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
@@ -71,14 +72,15 @@ class AdminPanelProvider extends PanelProvider
                     ->useUserResource(false),
                 FilamentShieldPlugin::make(),
                 EnvironmentIndicatorPlugin::make()
-                    ->color(fn (): array => match (app()->environment()) {
-                        'production' => Color::Red,
-                        'staging' => Color::Orange,
-                        'development' => Color::Blue,
+                    ->visible(true)
+                    ->environment(fn () => config('app.env_view'))
+                    ->color(fn (): array => match (config('app.env_view')) {
+                        'production' => null,
+                        'preprod' => Color::Blue,
                         default => Color::Green,
                     }),
                 FilamentVersionsPlugin::make(),
-            ])
-            ->topNavigation();
+                NavigationSidebarPlugin::make(),
+            ]);
     }
 }

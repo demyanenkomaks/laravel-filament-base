@@ -43,6 +43,8 @@ return [
 
     'debug' => (bool) env('APP_DEBUG', false),
 
+    'env_view' => env('APP_ENV_VIEW', 'local'),
+
     /*
     |--------------------------------------------------------------------------
     | Application URL

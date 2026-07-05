@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4608f70193d9066d6161f2fa2410a4b0",
+    "content-hash": "1af9ba4eee7479a95769b0ee69f81986",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -3688,16 +3688,16 @@
         },
         {
             "name": "maksde/helpers",
-            "version": "6.0.3",
+            "version": "6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/demyanenkomaks/helpers.git",
-                "reference": "f9c0dd81a2d76b7cf751c54111276a3b2a20dc71"
+                "reference": "7d6689d9a4f843282d9ba103da8e375efe3e1c49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/demyanenkomaks/helpers/zipball/f9c0dd81a2d76b7cf751c54111276a3b2a20dc71",
-                "reference": "f9c0dd81a2d76b7cf751c54111276a3b2a20dc71",
+                "url": "https://api.github.com/repos/demyanenkomaks/helpers/zipball/7d6689d9a4f843282d9ba103da8e375efe3e1c49",
+                "reference": "7d6689d9a4f843282d9ba103da8e375efe3e1c49",
                 "shasum": ""
             },
             "require": {
@@ -3741,22 +3741,22 @@
             "description": "Шаблоны для Resource FilamentPhp которые помогут сократить код для базово используемых компонентов форм и таблиц.",
             "support": {
                 "issues": "https://github.com/demyanenkomaks/helpers/issues",
-                "source": "https://github.com/demyanenkomaks/helpers/tree/v6.0.3"
+                "source": "https://github.com/demyanenkomaks/helpers/tree/v6.1.0"
             },
-            "time": "2026-06-10T06:33:04+00:00"
+            "time": "2026-07-05T08:48:56+00:00"
         },
         {
             "name": "maksde/support",
-            "version": "3.0.2",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/demyanenkomaks/support.git",
-                "reference": "b455b3b36df8b6f585ceaac5ced1c8c3026193dc"
+                "reference": "ddf80e48bf4680fa663fead7d2e5463d4b138e62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/demyanenkomaks/support/zipball/b455b3b36df8b6f585ceaac5ced1c8c3026193dc",
-                "reference": "b455b3b36df8b6f585ceaac5ced1c8c3026193dc",
+                "url": "https://api.github.com/repos/demyanenkomaks/support/zipball/ddf80e48bf4680fa663fead7d2e5463d4b138e62",
+                "reference": "ddf80e48bf4680fa663fead7d2e5463d4b138e62",
                 "shasum": ""
             },
             "require": {
@@ -3799,9 +3799,9 @@
             "description": "Помощник для Laravel",
             "support": {
                 "issues": "https://github.com/demyanenkomaks/support/issues",
-                "source": "https://github.com/demyanenkomaks/support/tree/v3.0.2"
+                "source": "https://github.com/demyanenkomaks/support/tree/v4.0.0"
             },
-            "time": "2026-03-23T07:05:36+00:00"
+            "time": "2026-07-05T11:20:27+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -11059,11 +11059,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.2.4",
+            "version": "2.2.5",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f0fe3fb03bb53ce68cc2416785b260e62226ec27",
-                "reference": "f0fe3fb03bb53ce68cc2416785b260e62226ec27",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/909c1e5fef7989ac0d0c1c5c42e32a5c4f6198a0",
+                "reference": "909c1e5fef7989ac0d0c1c5c42e32a5c4f6198a0",
                 "shasum": ""
             },
             "require": {
@@ -11119,7 +11119,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-07-03T07:00:23+00:00"
+            "time": "2026-07-05T06:31:06+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -11558,16 +11558,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.5.2",
+            "version": "2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "49ff6339174bdbdf50b0b35ecbcff14a05ac9e24"
+                "reference": "3d3577ad88d70d9f8dccd0a4c2f75bf13d6268e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/49ff6339174bdbdf50b0b35ecbcff14a05ac9e24",
-                "reference": "49ff6339174bdbdf50b0b35ecbcff14a05ac9e24",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/3d3577ad88d70d9f8dccd0a4c2f75bf13d6268e6",
+                "reference": "3d3577ad88d70d9f8dccd0a4c2f75bf13d6268e6",
                 "shasum": ""
             },
             "require": {
@@ -11606,7 +11606,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.5.2"
+                "source": "https://github.com/rectorphp/rector/tree/2.5.3"
             },
             "funding": [
                 {
@@ -11614,7 +11614,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-22T11:39:33+00:00"
+            "time": "2026-07-05T01:32:08+00:00"
         },
         {
             "name": "roave/security-advisories",
