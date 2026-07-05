@@ -1,6 +1,6 @@
 # 📋 Список предустановленных пакетов
 
-* [x] [Laravel 12](https://laravel.com/docs/12.x)
+* [x] [Laravel 13](https://laravel.com/docs/13.x)
 * [x] [Filament 5](https://filamentphp.com/docs/5.x/introduction/installation)
 
 ## Пользователи

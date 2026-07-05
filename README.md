@@ -5,13 +5,14 @@
 * [⚙️ Разработка ведется](#-разработка-ведется)
 * [🚀 Разворачивание проекта](#-разворачивание-проекта)
 * [🛠️ Команды использующиеся при разработке](documentation/console-commands-development.md)
+* [📐 Рекомендации по проекту](documentation/project-recommendations.md)
 * [📋 Список предустановленных пакетов](documentation/pre-installed-packages.md)
 
 ## ⚙️ Разработка ведется
 
 - **PHP**: 8.4+
 - **MySql**: 8+ или **PgSql**: 16+
-- **Laravel**: 12
+- **Laravel**: 13
 - **FilamentPhp**: 5
 
 ## 🚀 Разворачивание проекта

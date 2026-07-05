@@ -53,7 +53,7 @@ return [
             'render_hook' => env('FILAMENT_IMPERSONATE_BANNER_RENDER_HOOK', 'panels::body.start'),
 
             // Currently supports 'dark', 'light' and 'auto'.
-            'style' => env('FILAMENT_IMPERSONATE_BANNER_STYLE', 'dark'),
+            'style' => env('FILAMENT_IMPERSONATE_BANNER_STYLE', 'auto'),
 
             // Turn this off if you want `absolute` positioning, so the banner scrolls out of view
             'fixed' => env('FILAMENT_IMPERSONATE_BANNER_FIXED', true),
